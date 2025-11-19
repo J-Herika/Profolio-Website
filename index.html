@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duebase's Portfolio</title>
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #222;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        /* Header */
+        header {
+            padding: 60px 20px 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 600;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1em;
+            font-weight: 300;
+            color: #555;
+        }
+
+        /* Main Section */
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        .project-card p {
+            flex: 1;
+            font-size: 0.95em;
+            color: #444;
+        }
+
+        .btn {
+            font-size: 0.9em;
+            color: #222;
+            border: 1px solid #222;
+            border-radius: 6px;
+            padding: 8px 12px;
+            text-align: center;
+            margin-top: 12px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.85em;
+            color: #555;
+            border-top: 1px solid #ccc;
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header p {
+                font-size: 0.95em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>DueBase</h1>
+        <p>Software Engineering Student | Embedded Systems & App Developer</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am DueBase, a software engineering student in Istanbul. I focus on mobile apps. I like clean, minimal
+                solutions and documenting my work through personal projects.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>FundHive - Expense Tracker</h3>
+                    <p>A minimal Android app for tracking expenses. Stores amounts and categories locally, calculates
+                        totals, and lists all expenses.</p>
+                    <a class="btn" href="https://yourusername.github.io/FundHive-Policy.html" target="_blank">Privacy
+                        Policy</a>
+                </div>
+                <div class="project-card">
+                    <h3>Coming Soon</h3>
+                    <p>Coming Soon...</p>
+                    <a class="btn" href="#">Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Jamal | <a href="https://yourusername.github.io/FundHive-Policy.html" target="_blank">FundHive
+            Privacy Policy</a>
+    </footer>
+
+</body>
+
+</html>
